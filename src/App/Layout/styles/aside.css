@@ -23,11 +23,23 @@ aside li {
 }
 
 aside li a {
+  color: black;
+  text-decoration: none;
   display: block;
   padding: 0.5rem;
 }
 
+aside li a:hover {
+  color: var(--color-red)
+}
+
+aside a:active{
+  color: var(--color-red);
+}
+aside svg:has(+ a.active) path {
+  stroke: #FE3756;
+}
+
 aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  color: #FE3756;
 }
